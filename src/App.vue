@@ -1,40 +1,15 @@
 <template>
-  <div id="app">
-    <!-- Desktop Layout -->
-    <DesktopLayout v-if="!isMobile" />
-    
-    <!-- Mobile Layout -->
-    <MobileLayout v-else />
-  </div>
+  <router-view />
+  <BackgroundMusic src="/sound-liberation-luffy.mp3" />
+  
 </template>
 
 <script>
-import DesktopLayout from './components/DesktopLayout.vue'
-import MobileLayout from './components/MobileLayout.vue'
+import BackgroundMusic from './components/media/BackgroundMusic.vue'
 
-export default {
+export default { 
   name: 'App',
-  components: {
-    DesktopLayout,
-    MobileLayout
-  },
-  data() {
-    return {
-      isMobile: false
-    }
-  },
-  mounted() {
-    this.checkScreenSize()
-    window.addEventListener('resize', this.checkScreenSize)
-  },
-  beforeUnmount() {
-    window.removeEventListener('resize', this.checkScreenSize)
-  },
-  methods: {
-    checkScreenSize() {
-      this.isMobile = window.innerWidth <= 768
-    }
-  }
+  components: { BackgroundMusic }
 }
 </script>
 

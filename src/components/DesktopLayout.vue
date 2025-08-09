@@ -21,8 +21,8 @@
           <p class="hero-subtitle typing-animation">{{ portfolioData.hero.subheadline }}</p>
           <p class="hero-message">{{ portfolioData.hero.main_message }}</p>
           <div class="hero-buttons">
-            <button class="btn-8bit" @click="scrollToSection('projects')">{{ portfolioData.hero.cta_primary }}</button>
-            <button class="btn-8bit" @click="scrollToSection('contact')">{{ portfolioData.hero.cta_secondary }}</button>
+            <PixelButton @click="scrollToSection('projects')">{{ portfolioData.hero.cta_primary }}</PixelButton>
+            <PixelButton @click="scrollToSection('contact')">{{ portfolioData.hero.cta_secondary }}</PixelButton>
           </div>
         </div>
         <div class="hero-visual">
@@ -39,13 +39,12 @@
       <div class="container">
         <h2 class="section-title glitch" data-text="ABOUT ME">ABOUT ME</h2>
         <div class="about-content">
-          <div v-for="section in portfolioData.about.sections" 
-               :key="section.title" 
-               class="card-8bit">
+          <Card8Bit v-for="section in portfolioData.about.sections" 
+               :key="section.title">
             <div class="section-icon">{{ section.icon }}</div>
             <h3>{{ section.title }}</h3>
             <p>{{ section.content }}</p>
-          </div>
+          </Card8Bit>
         </div>
         <div class="key-points">
           <h3>KEY ACHIEVEMENTS</h3>
@@ -64,9 +63,9 @@
           <p>{{ portfolioData.experience.summary }}</p>
         </div>
         <div class="experience-timeline">
-          <div v-for="exp in portfolioData.experience.highlights" 
+          <Card8Bit v-for="exp in portfolioData.experience.highlights" 
                :key="exp.period" 
-               class="experience-item card-8bit">
+               customClass="experience-item">
             <div class="experience-header">
               <h3>{{ exp.role }}</h3>
               <span class="company">{{ exp.company }}</span>
@@ -75,7 +74,7 @@
             <ul class="achievements-list">
               <li v-for="achievement in exp.achievements" :key="achievement">{{ achievement }}</li>
             </ul>
-          </div>
+          </Card8Bit>
         </div>
       </div>
     </section>
@@ -111,10 +110,10 @@
     <section id="projects" class="section">
       <div class="container">
         <h2 class="section-title glitch" data-text="PROJECTS">PROJECTS</h2>
-        <div class="projects-grid">
-          <div v-for="project in portfolioData.projects" 
-               :key="project.id" 
-               class="project-card card-8bit">
+          <div class="projects-grid">
+            <Card8Bit v-for="project in portfolioData.projects" 
+                 :key="project.id" 
+                 customClass="project-card">
             <div class="project-header">
               <h3>{{ project.title }}</h3>
               <span class="project-category">{{ project.category }}</span>
@@ -140,7 +139,7 @@
               <a :href="project.github" target="_blank" class="btn-8bit">GITHUB</a>
               <a :href="project.demo" target="_blank" class="btn-8bit">DEMO</a>
             </div>
-          </div>
+            </Card8Bit>
         </div>
       </div>
     </section>
@@ -149,15 +148,15 @@
     <section id="achievements" class="section">
       <div class="container">
         <h2 class="section-title glitch" data-text="ACHIEVEMENTS">ACHIEVEMENTS</h2>
-        <div class="achievements-grid">
-          <div v-for="achievement in portfolioData.achievements" 
-               :key="achievement.title" 
-               class="achievement-card card-8bit">
+          <div class="achievements-grid">
+            <Card8Bit v-for="achievement in portfolioData.achievements" 
+                 :key="achievement.title" 
+                 customClass="achievement-card">
             <div class="achievement-icon">{{ achievement.icon }}</div>
             <h3>{{ achievement.title }}</h3>
             <p>{{ achievement.description }}</p>
             <div class="achievement-metrics">{{ achievement.metrics }}</div>
-          </div>
+            </Card8Bit>
         </div>
       </div>
     </section>
@@ -166,10 +165,10 @@
     <section id="education" class="section">
       <div class="container">
         <h2 class="section-title glitch" data-text="EDUCATION">EDUCATION</h2>
-        <div class="education-timeline">
-          <div v-for="edu in portfolioData.education" 
-               :key="edu.degree" 
-               class="education-item card-8bit">
+          <div class="education-timeline">
+            <Card8Bit v-for="edu in portfolioData.education" 
+                 :key="edu.degree" 
+                 customClass="education-item">
             <div class="education-header">
               <h3>{{ edu.degree }}</h3>
               <span class="institution">{{ edu.institution }}</span>
@@ -180,7 +179,7 @@
             <div v-if="edu.achievement" class="achievement">
               <strong>Achievement:</strong> {{ edu.achievement }}
             </div>
-          </div>
+            </Card8Bit>
         </div>
       </div>
     </section>
@@ -189,8 +188,8 @@
     <section id="contact" class="section">
       <div class="container">
         <h2 class="section-title glitch" data-text="CONTACT">CONTACT</h2>
-        <div class="contact-content">
-          <div class="contact-info card-8bit">
+          <div class="contact-content">
+            <Card8Bit customClass="contact-info">
             <h3>GET IN TOUCH</h3>
             <p>{{ portfolioData.contact.message }}</p>
             <div class="contact-details">
@@ -215,23 +214,8 @@
                 <span v-else class="contact-link">{{ detail.value }}</span>
               </div>
             </div>
-          </div>
-          <form class="contact-form card-8bit" @submit.prevent="handleContact">
-            <h3>SEND MESSAGE</h3>
-            <div class="form-group">
-              <label for="name">NAME:</label>
-              <input type="text" id="name" v-model="contactForm.name" required class="form-input">
-            </div>
-            <div class="form-group">
-              <label for="email">EMAIL:</label>
-              <input type="email" id="email" v-model="contactForm.email" required class="form-input">
-            </div>
-            <div class="form-group">
-              <label for="message">MESSAGE:</label>
-              <textarea id="message" v-model="contactForm.message" required class="form-input"></textarea>
-            </div>
-            <button type="submit" class="btn-8bit">SEND MESSAGE</button>
-          </form>
+            </Card8Bit>
+            <ContactForm variant="desktop" idPrefix="desktop" @submitted="onMessageSent" />
         </div>
       </div>
     </section>
@@ -247,30 +231,23 @@
 
 <script>
 import portfolioData from '../data/portfolio.json'
+import PixelButton from './ui/PixelButton.vue'
+import Card8Bit from './ui/Card8Bit.vue'
+import ContactForm from './forms/ContactForm.vue'
 
 export default {
   name: 'DesktopLayout',
+  components: { PixelButton, Card8Bit, ContactForm },
   data() {
-    return {
-      portfolioData,
-      contactForm: {
-        name: '',
-        email: '',
-        message: ''
-      }
-    }
+    return { portfolioData }
   },
   methods: {
     scrollToSection(sectionId) {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      const element = document.getElementById(sectionId)
+      if (element) element.scrollIntoView({ behavior: 'smooth' })
     },
-    handleContact() {
-      console.log('Contact form submitted:', this.contactForm);
-      alert('Message sent! (This is a demo - replace with actual form handling)');
-      this.contactForm = { name: '', email: '', message: '' };
+    onMessageSent() {
+      // noop hook for now
     }
   }
 }
