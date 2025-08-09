@@ -1,0 +1,394 @@
+{
+    "personal": {
+        "name": "RONALDO CRISTOVER OCTAVIANUS",
+        "title": "Senior Software Engineer | 10+ Years Building High-Scale, Secure Systems",
+        "subtitle": "Backend Architect & Tech Lead | Delivering Enterprise Solutions for Finance, Telco & E-commerce",
+        "email": "ronaldochristover@gmail.com",
+        "phone": "+6282121180999",
+        "location": "Bandung, Indonesia",
+        "logo": "RONALDO",
+        "linkedin": "https://linkedin.com/in/ronaldocristover",
+        "github": "https://github.com/ronaldocristover"
+    },
+    "hero": {
+        "headline": "Senior Software Engineer Crafting Enterprise-Scale Solutions",
+        "subheadline": "10+ years building secure, high-performance systems for finance, telco, and e-commerce. Expert in backend architecture, microservices, and digital transformation.",
+        "cta_primary": "View My Work",
+        "cta_secondary": "Let's Discuss Your Project",
+        "main_message": "I transform complex business challenges into elegant, scalable software solutions."
+    },
+    "about": {
+        "sections": [
+            {
+                "title": "ENTERPRISE-SCALE PROBLEM SOLVER",
+                "content": "I transform complex business challenges into elegant, scalable software solutions. With 10+ years of experience across finance, telco, e-commerce, and government sectors, I specialize in building robust systems that handle millions of users and transactions.",
+                "icon": "🏢"
+            },
+            {
+                "title": "SECURITY-FIRST ARCHITECT",
+                "content": "Deep expertise in secure software development, compliance, and enterprise-grade security. Led comprehensive testing for national-scale applications and developed secure banking APIs for major Indonesian financial institutions.",
+                "icon": "🔒"
+            },
+            {
+                "title": "DIGITAL TRANSFORMATION CATALYST",
+                "content": "Driving innovation and modernization across traditional industries. Streamlined Telkom Indonesia's digital operations, enhanced customer experiences in finance sector, and led microservices architecture implementations.",
+                "icon": "🚀"
+            }
+        ],
+        "key_points": [
+            "Led development of Digitalpass.id serving millions of users",
+            "Architected high-concurrent e-commerce platforms for multinational companies",
+            "Built secure banking APIs for major Indonesian financial institutions",
+            "Enhanced national-scale applications with comprehensive testing strategies",
+            "Master's degree in Computer Science with Big Data specialization"
+        ]
+    },
+    "experience": {
+        "summary": "Results-driven professional with over 10 years of experience in software development within multinational and national companies. Skilled in full-stack development and delivering robust web-based applications. Adept at utilizing diverse technologies and collaborating seamlessly with cross-functional teams to create user-centric products.",
+        "highlights": [
+            {
+                "period": "2019 - 2024",
+                "role": "Software Engineer",
+                "company": "Telkom Indonesia",
+                "achievements": [
+                    "Led Digitalpass.id & IDO Applications serving millions of users",
+                    "Directed software testing for 100+ internal services",
+                    "Enhanced Peduli Lindungi national COVID-19 tracking app",
+                    "Implemented comprehensive SOPs for quality assurance"
+                ]
+            },
+            {
+                "period": "2016-2019",
+                "role": "Full Stack Developer",
+                "company": "MyServices Sdn Bhd Malaysia",
+                "achievements": [
+                    "Developed high-concurrent Monspacemall e-commerce platform",
+                    "Built microservices architecture for multinational company",
+                    "Created E-learning modules using Moodle Framework",
+                    "Developed high-scale APIs using Laravel"
+                ]
+            },
+            {
+                "period": "2013 - 2016",
+                "role": "Software Engineer",
+                "company": "Itasoft Pelagul Global",
+                "achievements": [
+                    "Developed secure banking APIs for CS Finance, BCA Finance, Bank Mega",
+                    "Streamlined operations and enhanced customer experiences",
+                    "Drove digital transformation in finance sector"
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "categories": [
+            {
+                "name": "BACKEND ARCHITECTURE",
+                "items": [
+                    "Microservices",
+                    "API Design",
+                    "System Architecture",
+                    "Performance Optimization",
+                    "Backend Development"
+                ]
+            },
+            {
+                "name": "SECURITY & TESTING",
+                "items": [
+                    "Software Security",
+                    "Comprehensive Testing",
+                    "Quality Assurance",
+                    "Compliance",
+                    "Application Support"
+                ]
+            },
+            {
+                "name": "CLOUD & DEVOPS",
+                "items": [
+                    "AWS",
+                    "Google Cloud",
+                    "Docker",
+                    "CI/CD",
+                    "Azure",
+                    "DigitalOcean"
+                ]
+            },
+            {
+                "name": "TECHNOLOGIES",
+                "items": [
+                    "PHP",
+                    "JavaScript",
+                    "TypeScript",
+                    "Laravel",
+                    "NodeJS",
+                    "CodeIgniter"
+                ]
+            }
+        ],
+        "additional_skills": [
+            "Agile Development",
+            "Collaboration Skills",
+            "Troubleshooting",
+            "API Integration",
+            "Performance Tuning and Monitoring"
+        ]
+    },
+    "projects": [
+        {
+            "id": 1,
+            "title": "DIGITALPASS.ID & IDO APPLICATIONS",
+            "description": "Led development and enhancement of Telkom Indonesia's digital identity platform, streamlining development and quality processes. Managed comprehensive testing for 100+ internal services ensuring high performance and compliance standards.",
+            "challenge": "Transform Telkom Indonesia's digital identity management with enterprise-scale reliability",
+            "solution": "Architected microservices-based platform with comprehensive testing framework",
+            "impact": "Millions of users, 100+ internal services tested",
+            "technologies": [
+                "Laravel",
+                "PHP",
+                "MySQL",
+                "Docker",
+                "AWS"
+            ],
+            "github": "https://github.com/ronaldocristover/digitalpass-apps",
+            "demo": "https://digitalpass.id",
+            "category": "Enterprise Platform"
+        },
+        {
+            "id": 2,
+            "title": "HIGH-SCALE BANKING APIS",
+            "description": "Developed secure, high-performance APIs for major Indonesian banking institutions including CS Finance, BCA Finance, and Bank Mega. Streamlined operations and enhanced customer experiences in the finance sector.",
+            "challenge": "Build secure, compliant APIs for major Indonesian financial institutions",
+            "solution": "Designed enterprise-grade API architecture with security-first approach",
+            "impact": "CS Finance, BCA Finance, Bank Mega integration",
+            "technologies": [
+                "PHP",
+                "Laravel",
+                "MySQL",
+                "Docker",
+                "AWS"
+            ],
+            "github": "https://github.com/ronaldocristover/banking-apis",
+            "demo": "https://banking-apis.com",
+            "category": "Financial Services"
+        },
+        {
+            "id": 3,
+            "title": "MONSAPCEMALL E-COMMERCE MICROSERVICES",
+            "description": "Architected and implemented microservices architecture for multinational e-commerce platform. Developed high-concurrent application using Opencart Framework with continuous optimization for performance and scalability.",
+            "challenge": "Scale e-commerce platform for multinational company with high-concurrent traffic",
+            "solution": "Implemented microservices architecture with performance optimization",
+            "impact": "High-concurrent multinational platform",
+            "technologies": [
+                "PHP",
+                "Opencart",
+                "MySQL",
+                "Redis",
+                "Docker"
+            ],
+            "github": "https://github.com/ronaldocristover/monspacemall",
+            "demo": "https://monspacemall.com",
+            "category": "E-commerce"
+        },
+        {
+            "id": 4,
+            "title": "PEDULI LINDUNGI TESTING ENHANCEMENT",
+            "description": "Led comprehensive functional and non-functional testing for national COVID-19 tracking application. Implemented SOPs that improved efficiency and consistency in software testing processes.",
+            "challenge": "Ensure reliability and performance of national-scale COVID-19 tracking application",
+            "solution": "Comprehensive testing framework with automated quality assurance",
+            "impact": "National-scale application, millions of users",
+            "technologies": [
+                "Testing",
+                "Quality Assurance",
+                "Performance Testing",
+                "Security Testing"
+            ],
+            "github": "https://github.com/ronaldocristover/peduli-lindungi",
+            "demo": "https://pedulilindungi.id",
+            "category": "Government Services"
+        },
+        {
+            "id": 5,
+            "title": "GOBUDDY ASIA PLATFORMS",
+            "description": "Led development of software products including E-commerce platforms, portals, mobile apps, and dashboard analytics. Provided effective solutions for project-related issues ensuring smooth delivery.",
+            "challenge": "Create multi-platform digital solutions for Asia market",
+            "solution": "Full-stack development with continuous optimization",
+            "impact": "Multi-platform digital solutions",
+            "technologies": [
+                "Laravel",
+                "PHP",
+                "MySQL",
+                "Docker",
+                "Google Cloud"
+            ],
+            "github": "https://github.com/ronaldocristover/gobuddy-platforms",
+            "demo": "https://gobuddy.asia",
+            "category": "Multi-Platform"
+        },
+        {
+            "id": 6,
+            "title": "KROMBANK USER APPS",
+            "description": "Led the development of backend services for Krombank User Applications with continuous optimization. Enhanced software development through continuous optimization efforts.",
+            "challenge": "Develop robust backend services for banking user applications",
+            "solution": "Scalable backend architecture with continuous optimization",
+            "impact": "Enhanced banking user experience",
+            "technologies": [
+                "JavaScript",
+                "NodeJS",
+                "MySQL",
+                "Docker",
+                "AWS"
+            ],
+            "github": "https://github.com/ronaldocristover/krombank-apps",
+            "demo": "https://krombank.com",
+            "category": "Financial Services"
+        }
+    ],
+    "achievements": [
+        {
+            "title": "Led Digitalpass.id & IDO Applications",
+            "description": "Streamlined development and quality processes for Telkom Indonesia's digital identity platform",
+            "metrics": "Millions of users, 100+ internal services tested",
+            "icon": "🏢"
+        },
+        {
+            "title": "Developed High-Scale Banking APIs",
+            "description": "Built secure, high-performance APIs for major Indonesian banks",
+            "metrics": "CS Finance, BCA Finance, Bank Mega integration",
+            "icon": "🏦"
+        },
+        {
+            "title": "Architected E-commerce Microservices",
+            "description": "Designed and implemented microservices architecture for multinational e-commerce platform",
+            "metrics": "High-concurrent Monspacemall platform",
+            "icon": "🛒"
+        },
+        {
+            "title": "Enhanced Peduli Lindungi Testing",
+            "description": "Led comprehensive functional and non-functional testing for national COVID-19 tracking app",
+            "metrics": "National-scale application, millions of users",
+            "icon": "🏥"
+        },
+        {
+            "title": "Best Graduate Recognition",
+            "description": "Achieved highest academic honors in Master of Computer Science program",
+            "metrics": "Big Data and Data Analytics specialization",
+            "icon": "🎓"
+        }
+    ],
+    "education": [
+        {
+            "degree": "Master of Computer Science",
+            "institution": "Maranatha Christian University, Bandung, Indonesia",
+            "major": "Big Data and Data Analytics",
+            "thesis": "Generalization Of The Regression Model To Direct The Variety Of Share Investment Follow-Up",
+            "achievement": "Best Graduate of Master of Computer Science",
+            "period": "2020-2022"
+        },
+        {
+            "degree": "Bachelor of Information and Technology",
+            "institution": "Maranatha Christian University, Bandung, Indonesia",
+            "major": "Backend Software Development and Software Architecture",
+            "thesis": "CRM Application",
+            "period": "2016-2020"
+        },
+        {
+            "degree": "Diploma of Computer Engineering",
+            "institution": "Telkom Politechnic, Bandung, Indonesia",
+            "major": "Network and Computer Engineering",
+            "thesis": "Queue Network Application to Support Enterprise Company",
+            "period": "2013-2016"
+        }
+    ],
+    "contact": {
+        "message": "Ready to build enterprise-scale solutions? Let's discuss how I can help transform your business challenges into secure, high-performance software systems.",
+        "details": [
+            {
+                "label": "EMAIL",
+                "value": "ronaldochristover@gmail.com",
+                "type": "email"
+            },
+            {
+                "label": "PHONE",
+                "value": "+6282121180999",
+                "type": "phone"
+            },
+            {
+                "label": "LOCATION",
+                "value": "Bandung, Indonesia",
+                "type": "text"
+            },
+            {
+                "label": "LINKEDIN",
+                "value": "linkedin.com/in/ronaldocristover",
+                "type": "linkedin"
+            },
+            {
+                "label": "GITHUB",
+                "value": "github.com/ronaldocristover",
+                "type": "github"
+            }
+        ]
+    },
+    "navigation": [
+        {
+            "id": "home",
+            "label": "HOME"
+        },
+        {
+            "id": "about",
+            "label": "ABOUT"
+        },
+        {
+            "id": "experience",
+            "label": "EXPERIENCE"
+        },
+        {
+            "id": "skills",
+            "label": "SKILLS"
+        },
+        {
+            "id": "projects",
+            "label": "PROJECTS"
+        },
+        {
+            "id": "achievements",
+            "label": "ACHIEVEMENTS"
+        },
+        {
+            "id": "education",
+            "label": "EDUCATION"
+        },
+        {
+            "id": "contact",
+            "label": "CONTACT"
+        }
+    ],
+    "blog_categories": [
+        {
+            "category": "Technical Leadership",
+            "topics": [
+                "Microservices Architecture Best Practices",
+                "Building Secure APIs for Financial Services",
+                "Performance Optimization Strategies",
+                "Digital Transformation Case Studies"
+            ]
+        },
+        {
+            "category": "Industry Insights",
+            "topics": [
+                "The Future of Banking Technology",
+                "Telco Digital Transformation Trends",
+                "E-commerce Scalability Challenges",
+                "Government Digital Services"
+            ]
+        },
+        {
+            "category": "Career Development",
+            "topics": [
+                "Transitioning from Developer to Tech Lead",
+                "Building High-Performance Engineering Teams",
+                "Balancing Technical Depth with Business Impact",
+                "Continuous Learning in Software Engineering"
+            ]
+        }
+    ]
+}
